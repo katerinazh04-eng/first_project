@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заметка | Просто и со вкусом</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(145deg, #e0e5ec 0%, #f0f4fa 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', 'Roboto', system-ui, -apple-system, sans-serif;
+            padding: 1.5rem;
+        }
+
+        .note-card {
+            max-width: 650px;
+            width: 100%;
+            background: #fffef7;
+            border-radius: 2rem;
+            box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.02);
+            padding: 2rem 2rem 2rem 2rem;
+            transition: transform 0.2s ease;
+            border: 1px solid rgba(255, 245, 215, 0.6);
+        }
+
+        .note-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .note-header {
+            border-left: 6px solid #f5b042;
+            padding-left: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .note-title {
+            font-size: 1.9rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            color: #2c2b28;
+            margin-bottom: 0.3rem;
+        }
+
+        .note-date {
+            font-size: 0.8rem;
+            color: #a28c6f;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+        }
+
+        .note-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #f5b04230, #f5b04280, #f5b04230);
+            margin: 1.2rem 0 1.2rem 0;
+            border: 0;
+        }
+
+        .note-content {
+            font-size: 1rem;
+            line-height: 1.55;
+            color: #2d2a24;
+        }
+
+        .note-content p {
+            margin-bottom: 1rem;
+        }
+
+        .highlight {
+            background: #fef3d6;
+            padding: 0.1rem 0.2rem;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        .signature {
+            margin-top: 1.8rem;
+            text-align: right;
+            font-style: italic;
+            color: #b59a74;
+            font-size: 0.85rem;
+            border-top: 1px dashed #f0e0c0;
+            padding-top: 1rem;
+        }
+    </style>
+</head>
